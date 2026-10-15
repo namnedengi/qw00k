@@ -34,18 +34,15 @@
 
 <br/>
 
-<!-- 7 & 8. Монитор времени (WakaTime) и Аналитика сервера (Stats) -->
+<!-- 7 & 8. Аналитика сервера (GitHub Stats) -->
 <div align="center">
   <table border="0">
     <tr>
       <td width="50%" align="center">
-        <!-- WakaTime Stats (ЗАМЕНИТЕ YOUR_WAKATIME_USERNAME на ваш ник) -->
-        <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&layout=compact&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000&hide_border=true" alt="WakaTime Stats" />
-      </td>
-      <td width="50%" align="center">
         <!-- GitHub Stats -->
         <img src="https://github-readme-stats.vercel.app/api?username=qw00k&show_icons=true&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000&hide_border=true" alt="GitHub Stats" />
-        <br/>
+      </td>
+      <td width="50%" align="center">
         <!-- Top Languages -->
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qw00k&layout=compact&bg_color=000000&title_color=ff0000&text_color=ffffff&hide_border=true" alt="Top Languages" />
       </td>
@@ -55,7 +52,15 @@
 
 <br/>
 
-<!-- 9. Мрачный 3D-город (Генерируется workflow) -->
+<!-- 9. Монитор времени (WakaTime) - Автоматическое обновление -->
+<div align="center">
+  <!--START_SECTION:waka-->
+  <!--END_SECTION:waka-->
+</div>
+
+<br/>
+
+<!-- 10. Мрачный 3D-город (Генерируется workflow) -->
 <div align="center">
   <!-- 3D Contribution Graph -->
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
