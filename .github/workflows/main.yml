@@ -1,24 +1,31 @@
-name: GitHub-Profile-3D-Contrib
+name: Update Profile Assets
 
 on:
-  schedule: # Запуск каждые 24 часа
+  schedule:
+    # Запуск каждый день в 00:00 UTC
     - cron: "0 0 * * *"
-  workflow_dispatch: # Позволяет запускать вручную
+  workflow_dispatch:
 
 jobs:
-  build:
+  update-profile:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    permissions:
+      contents: write
+    
     steps:
-      - uses: actions/checkout@v3
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      # 1. Генерация 3D-графика вкладов (Мрачный город)
+      - name: Generate 3D Contribution Graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          
+      # 2. Добавление и коммит изменений
       - name: Commit & Push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A .
-          git commit -m "Generated 3D Profile" || exit 0
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update profile assets"
+          branch: main
