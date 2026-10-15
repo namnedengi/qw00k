@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Важно: нужна полная история, чтобы избежать конфликтов
         
       # 1. Генерация 3D-графика вкладов
       - name: Generate 3D Contribution Graph
@@ -35,9 +37,11 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           
-      # 3. Коммит и пуш изменений
+      # 3. Коммит и пуш изменений (с защитой от конфликтов)
       - name: Commit & Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update profile assets & waka stats"
           branch: main
+          skip_checkout: true
+          push_options: '--force-with-lease'
