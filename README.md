@@ -11,15 +11,12 @@
 
 <br/>
 
-<!-- 4. ASCII Заголовок (MATRIX) -->
-<pre align="center">
-<b><span style="color:#ff0000;">███╗   ███╗ █████╗ ████████╗██████╗ ██╗██╗  ██╗</span>
-<span style="color:#ff0000;">████╗ ████║██╔══██╗╚══██╔══╝██╔══██╗██║╚██╗██╔╝</span>
-<span style="color:#ff0000;">██╔████╔██║███████║   ██║   ██████╔╝██║ ╚███╔╝ </span>
-<span style="color:#ff0000;">██║╚██╔╝██║██╔══██║   ██║   ██╔══██╗██║ ██╔██╗ </span>
-<span style="color:#ff0000;">██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██╔╝ ██╗</span>
-<span style="color:#ff0000;">╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝</span></b>
-</pre>
+<!-- 2. Нейро-ядро терминала (Череп и Матрица) -->
+<div align="center">
+  <img src="hacker-core.svg" alt="Hacker Core" width="100%" />
+</div>
+
+<br/>
 
 <!-- 5. Зашифрованный блок (Китайский текст) -->
 <div align="center">
@@ -42,11 +39,11 @@
   <table border="0">
     <tr>
       <td width="50%" align="center">
-        <!-- WakaTime Stats (вставьте свой ник) -->
-        <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&layout=compact&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000" alt="WakaTime Stats" />
+        <!-- WakaTime Stats (ЗАМЕНИТЕ YOUR_WAKATIME_USERNAME на ваш ник) -->
+        <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&layout=compact&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000&hide_border=true" alt="WakaTime Stats" />
       </td>
       <td width="50%" align="center">
-        <!-- GitHub Stats (вставьте свой ник) -->
+        <!-- GitHub Stats -->
         <img src="https://github-readme-stats.vercel.app/api?username=qw00k&show_icons=true&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000&hide_border=true" alt="GitHub Stats" />
         <br/>
         <!-- Top Languages -->
