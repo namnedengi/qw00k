@@ -2,6 +2,7 @@ name: Update Profile Assets
 
 on:
   schedule:
+    # Запуск каждый день в 00:00 UTC
     - cron: "0 0 * * *"
   workflow_dispatch:
 
@@ -15,14 +16,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
+      # 1. Генерация 3D-графика вкладов
       - name: Generate 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           
+      # 2. Обновление статистики WakaTime в README
+      - name: Update WakaTime Stats
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TITLE: true
+          BLOCKS: "░▒▓█"
+          TIME_RANGE: last_7_days
+          LANG_COUNT: 5
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          
+      # 3. Коммит и пуш изменений
       - name: Commit & Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update profile assets"
+          commit_message: "chore: update profile assets & waka stats"
           branch: main
