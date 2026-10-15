@@ -13,7 +13,7 @@
 
 <!-- 2. Нейро-ядро терминала (Череп и Матрица) -->
 <div align="center">
-  <img src="hacker-core.svg" alt="Hacker Core" width="100%" />
+  <img src="hacker-core-v2.svg" alt="Hacker Core" width="100%" />
 </div>
 
 <br/>
