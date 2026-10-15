@@ -1,55 +1,228 @@
-<svg xmlns="http://w3.org" viewBox="0 0 800 350" width="100%" height="100%" style="background:#0d0d0d;">
-  <style>
-    /* Мерцание черепа */
-    @keyframes neon-flicker {
-      0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        fill: #ff0000;
-        filter: drop-shadow(0 0 2px #ff0000) drop-shadow(0 0 8px #ff0000);
-        opacity: 1;
-      }
-      20%, 24%, 55% {
-        fill: #2a0000;
-        filter: none;
-        opacity: 0.3;
-      }
-    }
-    /* Падение цифр */
-    @keyframes matrix-fall {
-      0% { transform: translateY(-120px); opacity: 0; }
-      10% { opacity: 0.8; }
-      90% { opacity: 0.8; }
-      100% { transform: translateY(380px); opacity: 0; }
-    }
-    .glitch-skull { animation: neon-flicker 3s infinite alternate; }
-    .matrix-text { font-family: 'Courier New', monospace; font-size: 15px; font-weight: bold; fill: #500000; }
-    .bright-code { fill: #ff0000; filter: drop-shadow(0 0 1px #ff0000); }
-    
-    .col-1 { animation: matrix-fall 4s infinite linear; animation-delay: 0s; }
-    .col-2 { animation: matrix-fall 5s infinite linear; animation-delay: 1.5s; }
-    .col-3 { animation: matrix-fall 3.5s infinite linear; animation-delay: 0.7s; }
-    .col-4 { animation: matrix-fall 6s infinite linear; animation-delay: 2.2s; }
-    .col-5 { animation: matrix-fall 4.5s infinite linear; animation-delay: 1s; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <!-- Фон -->
+  <rect width="800" height="400" fill="#0a0a0a" />
 
-  <!-- Задний фон кода (Матрица из ваших чисел) -->
-  <g class="col-1" transform="translate(40, 0)">
-    <text x="0" y="30" class="matrix-text">852</text><text x="0" y="60" class="matrix-text">5</text><text x="0" y="90" class="matrix-text">2</text><text x="0" y="150" class="matrix-text">852-5-2</text>
-  </g>
-  <g class="col-2" transform="translate(180, 0)">
-    <text x="0" y="20" class="matrix-text">5</text><text x="0" y="50" class="matrix-text">2</text><text x="0" y="80" class="matrix-text bright-code">852</text><text x="0" y="140" class="matrix-text">5</text>
-  </g>
-  <g class="col-3" transform="translate(300, 0)">
-    <text x="0" y="40" class="matrix-text">852-5-2</text><text x="0" y="100" class="matrix-text">2</text><text x="0" y="130" class="matrix-text">852</text>
-  </g>
-  <g class="col-4" transform="translate(620, 0)">
-    <text x="0" y="15" class="matrix-text">2</text><text x="0" y="75" class="matrix-text">852</text><text x="0" y="105" class="matrix-text bright-code">852-5-2</text>
-  </g>
-  <g class="col-5" transform="translate(730, 0)">
-    <text x="0" y="50" class="matrix-text">852</text><text x="0" y="80" class="matrix-text">5</text><text x="0" y="110" class="matrix-text">2</text>
+  <!-- Слой цифрового дождя -->
+  <g font-family="monospace" font-size="16" fill="#ff0000" opacity="0.6">
+    <!-- Колонка 1 -->
+    <g>
+      <text x="50" y="0" text-anchor="middle">8</text>
+      <text x="50" y="16" text-anchor="middle">5</text>
+      <text x="50" y="32" text-anchor="middle">2</text>
+      <text x="50" y="48" text-anchor="middle">-</text>
+      <text x="50" y="64" text-anchor="middle">5</text>
+      <text x="50" y="80" text-anchor="middle">-</text>
+      <text x="50" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="4s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 2 -->
+    <g>
+      <text x="100" y="0" text-anchor="middle">8</text>
+      <text x="100" y="16" text-anchor="middle">5</text>
+      <text x="100" y="32" text-anchor="middle">2</text>
+      <text x="100" y="48" text-anchor="middle">-</text>
+      <text x="100" y="64" text-anchor="middle">5</text>
+      <text x="100" y="80" text-anchor="middle">-</text>
+      <text x="100" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="6s" begin="-2s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 3 -->
+    <g>
+      <text x="150" y="0" text-anchor="middle">8</text>
+      <text x="150" y="16" text-anchor="middle">5</text>
+      <text x="150" y="32" text-anchor="middle">2</text>
+      <text x="150" y="48" text-anchor="middle">-</text>
+      <text x="150" y="64" text-anchor="middle">5</text>
+      <text x="150" y="80" text-anchor="middle">-</text>
+      <text x="150" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="5s" begin="-1s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 4 -->
+    <g>
+      <text x="200" y="0" text-anchor="middle">8</text>
+      <text x="200" y="16" text-anchor="middle">5</text>
+      <text x="200" y="32" text-anchor="middle">2</text>
+      <text x="200" y="48" text-anchor="middle">-</text>
+      <text x="200" y="64" text-anchor="middle">5</text>
+      <text x="200" y="80" text-anchor="middle">-</text>
+      <text x="200" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="7s" begin="-3s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 5 -->
+    <g>
+      <text x="250" y="0" text-anchor="middle">8</text>
+      <text x="250" y="16" text-anchor="middle">5</text>
+      <text x="250" y="32" text-anchor="middle">2</text>
+      <text x="250" y="48" text-anchor="middle">-</text>
+      <text x="250" y="64" text-anchor="middle">5</text>
+      <text x="250" y="80" text-anchor="middle">-</text>
+      <text x="250" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="4.5s" begin="-0.5s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 6 -->
+    <g>
+      <text x="300" y="0" text-anchor="middle">8</text>
+      <text x="300" y="16" text-anchor="middle">5</text>
+      <text x="300" y="32" text-anchor="middle">2</text>
+      <text x="300" y="48" text-anchor="middle">-</text>
+      <text x="300" y="64" text-anchor="middle">5</text>
+      <text x="300" y="80" text-anchor="middle">-</text>
+      <text x="300" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="5.5s" begin="-4s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 7 -->
+    <g>
+      <text x="350" y="0" text-anchor="middle">8</text>
+      <text x="350" y="16" text-anchor="middle">5</text>
+      <text x="350" y="32" text-anchor="middle">2</text>
+      <text x="350" y="48" text-anchor="middle">-</text>
+      <text x="350" y="64" text-anchor="middle">5</text>
+      <text x="350" y="80" text-anchor="middle">-</text>
+      <text x="350" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="3.5s" begin="-1.5s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 8 -->
+    <g>
+      <text x="400" y="0" text-anchor="middle">8</text>
+      <text x="400" y="16" text-anchor="middle">5</text>
+      <text x="400" y="32" text-anchor="middle">2</text>
+      <text x="400" y="48" text-anchor="middle">-</text>
+      <text x="400" y="64" text-anchor="middle">5</text>
+      <text x="400" y="80" text-anchor="middle">-</text>
+      <text x="400" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="6.5s" begin="-2.5s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 9 -->
+    <g>
+      <text x="450" y="0" text-anchor="middle">8</text>
+      <text x="450" y="16" text-anchor="middle">5</text>
+      <text x="450" y="32" text-anchor="middle">2</text>
+      <text x="450" y="48" text-anchor="middle">-</text>
+      <text x="450" y="64" text-anchor="middle">5</text>
+      <text x="450" y="80" text-anchor="middle">-</text>
+      <text x="450" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="4.2s" begin="-3.2s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 10 -->
+    <g>
+      <text x="500" y="0" text-anchor="middle">8</text>
+      <text x="500" y="16" text-anchor="middle">5</text>
+      <text x="500" y="32" text-anchor="middle">2</text>
+      <text x="500" y="48" text-anchor="middle">-</text>
+      <text x="500" y="64" text-anchor="middle">5</text>
+      <text x="500" y="80" text-anchor="middle">-</text>
+      <text x="500" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="5.8s" begin="-1.8s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 11 -->
+    <g>
+      <text x="550" y="0" text-anchor="middle">8</text>
+      <text x="550" y="16" text-anchor="middle">5</text>
+      <text x="550" y="32" text-anchor="middle">2</text>
+      <text x="550" y="48" text-anchor="middle">-</text>
+      <text x="550" y="64" text-anchor="middle">5</text>
+      <text x="550" y="80" text-anchor="middle">-</text>
+      <text x="550" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="3.8s" begin="-0.8s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 12 -->
+    <g>
+      <text x="600" y="0" text-anchor="middle">8</text>
+      <text x="600" y="16" text-anchor="middle">5</text>
+      <text x="600" y="32" text-anchor="middle">2</text>
+      <text x="600" y="48" text-anchor="middle">-</text>
+      <text x="600" y="64" text-anchor="middle">5</text>
+      <text x="600" y="80" text-anchor="middle">-</text>
+      <text x="600" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="7.2s" begin="-4.2s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 13 -->
+    <g>
+      <text x="650" y="0" text-anchor="middle">8</text>
+      <text x="650" y="16" text-anchor="middle">5</text>
+      <text x="650" y="32" text-anchor="middle">2</text>
+      <text x="650" y="48" text-anchor="middle">-</text>
+      <text x="650" y="64" text-anchor="middle">5</text>
+      <text x="650" y="80" text-anchor="middle">-</text>
+      <text x="650" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="4.8s" begin="-2.8s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 14 -->
+    <g>
+      <text x="700" y="0" text-anchor="middle">8</text>
+      <text x="700" y="16" text-anchor="middle">5</text>
+      <text x="700" y="32" text-anchor="middle">2</text>
+      <text x="700" y="48" text-anchor="middle">-</text>
+      <text x="700" y="64" text-anchor="middle">5</text>
+      <text x="700" y="80" text-anchor="middle">-</text>
+      <text x="700" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="6.2s" begin="-1.2s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Колонка 15 -->
+    <g>
+      <text x="750" y="0" text-anchor="middle">8</text>
+      <text x="750" y="16" text-anchor="middle">5</text>
+      <text x="750" y="32" text-anchor="middle">2</text>
+      <text x="750" y="48" text-anchor="middle">-</text>
+      <text x="750" y="64" text-anchor="middle">5</text>
+      <text x="750" y="80" text-anchor="middle">-</text>
+      <text x="750" y="96" text-anchor="middle">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,400" dur="5.2s" begin="-3.8s" repeatCount="indefinite" />
+    </g>
   </g>
 
-  <!-- Центр: Огромный мерцающий череп -->
-  <g transform="translate(350, 90) scale(1.1)">
-    <path class="glitch-skull" d="M50,15 C33,15 25,25 25,43 C25,53 28,60 33,65 L33,78 L43,78 L43,85 L57,85 L57,78 L67,78 L67,65 C72,60 75,53 75,43 C75,25 67,15 50,15 Z M38,48 C35,48 33,45 33,42 C33,39 35,36 38,36 C41,36 43,39 43,42 C43,45 41,48 38,48 Z M62,48 C59,48 57,45 57,42 C57,39 59,36 62,36 C65,36 67,39 67,42 C67,45 65,48 62,48 Z M46,65 L43,55 L57,55 L54,65 L46,65 Z" />
+  <!-- Центральный череп (мерцающий) -->
+  <g transform="translate(400, 200)">
+    <!-- Аура/свечение -->
+    <circle cx="0" cy="0" r="100" fill="#ff0000" opacity="0.1">
+      <animate attributeName="opacity" values="0.05; 0.15; 0.05" dur="2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Череп -->
+    <g fill="#ff0000" opacity="0.9">
+      <!-- Форма черепа (упрощённая) -->
+      <path d="M -60, -40 
+               C -60, -100, 60, -100, 60, -40 
+               C 60, 0, 40, 20, 20, 30 
+               L 20, 50 
+               L -20, 50 
+               L -20, 30 
+               C -40, 20, -60, 0, -60, -40 Z" 
+            stroke="#ff0000" stroke-width="2" fill="none" opacity="0.8" />
+      
+      <!-- Глаза -->
+      <ellipse cx="-25" cy="-30" rx="12" ry="8" fill="#ff0000" opacity="0.9">
+        <animate attributeName="opacity" values="0.9; 0.3; 0.9" dur="1.5s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="25" cy="-30" rx="12" ry="8" fill="#ff0000" opacity="0.9">
+        <animate attributeName="opacity" values="0.9; 0.3; 0.9" dur="1.5s" begin="0.7s" repeatCount="indefinite" />
+      </ellipse>
+
+      <!-- Нос -->
+      <path d="M -5, -10 L 5, -10 L 0, 5 Z" fill="#ff0000" opacity="0.7" />
+
+      <!-- Зубы -->
+      <line x1="-15" y1="35" x2="15" y2="35" stroke="#ff0000" stroke-width="3" opacity="0.8" />
+      <line x1="-10" y1="42" x2="-10" y2="48" stroke="#ff0000" stroke-width="2" opacity="0.7" />
+      <line x1="0" y1="42" x2="0" y2="48" stroke="#ff0000" stroke-width="2" opacity="0.7" />
+      <line x1="10" y1="42" x2="10" y2="48" stroke="#ff0000" stroke-width="2" opacity="0.7" />
+
+      <!-- Мерцание всего черепа -->
+      <animate attributeName="opacity" values="0.9; 0.4; 0.9; 0.6; 0.9" dur="0.8s" repeatCount="indefinite" />
+    </g>
   </g>
 </svg>
