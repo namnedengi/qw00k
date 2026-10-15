@@ -1,57 +1,65 @@
-<!-- БАННЕР-ТАЙПИНГ: ВЕРХНЯЯ СТРОКА СБОЯ СИСТЕМЫ -->
-<p align="center">
-  <img src="https://demolab.com" alt="Hacker Banner" />
-</p>
+<div align="center">
+  <!-- 1. Анимированный индикатор фаервола (Banner Typing) -->
+  <a href="https://github.com/qw00k">
+    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=500&color=FF0000&center=true&vCenter=true&width=600&lines=SYSTEM+COMPROMISED...;UNAUTHORIZED+USER+DETECTED...;INITIATING+EXPLOIT+852-5-1..." alt="Typing SVG" />
+  </a>
+  <br/>
+  
+  <!-- 3. Лог посещений (Счётчик взломов) -->
+  <img src="https://komarev.com/ghpvc/?username=qw00k&label=TOTAL_SYSTEM_INFILTRATIONS&color=red&style=flat-square" alt="Visitor Count" />
+</div>
 
-<!-- НАШ КАСТОМНЫЙ ЧЕРЕП С ЦИФРАМИ -->
-<p align="center">
-  <img src="./hacker-core.svg" width="100%" alt="Core Core" />
-</p>
+<br/>
 
-<!-- СЧЕТЧИК ПОСЕЩЕНИЙ В СТИЛЕ ТЕРМИНАЛА -->
-<p align="center">
-  <img src="https://glitch.me" alt="System Infiltrations" />
-  <br>
-  <code>[ TOTAL_SYSTEM_INFILTRATIONS ]</code>
-</p>
+<!-- 4. ASCII Заголовок (MATRIX) -->
+<pre align="center">
+<b><span style="color:#ff0000;">███╗   ███╗ █████╗ ████████╗██████╗ ██╗██╗  ██╗</span>
+<span style="color:#ff0000;">████╗ ████║██╔══██╗╚══██╔══╝██╔══██╗██║╚██╗██╔╝</span>
+<span style="color:#ff0000;">██╔████╔██║███████║   ██║   ██████╔╝██║ ╚███╔╝ </span>
+<span style="color:#ff0000;">██║╚██╔╝██║██╔══██║   ██║   ██╔══██╗██║ ██╔██╗ </span>
+<span style="color:#ff0000;">██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██╔╝ ██╗</span>
+<span style="color:#ff0000;">╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝</span></b>
+</pre>
 
-◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢ TERMINAL ◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢
+<!-- 5. Зашифрованный блок (Китайский текст) -->
+<div align="center">
+  <p><code>警告：权限已被强制覆写。协议 852-5-1 激活。系统不欢迎任何追踪尝试。 </code></p>
+</div>
 
-```text
- █▄ ▄█ █▀█ █▀█ █▀▀ █ █ █▀█ █▄ █ 
- █ ▀ █ █▄█ █▀▄ █▄▄ █▄█ █▀▄ █ ▀█ 
-              [ HOST_STATUS: OVERRIDE ]
-```
+<br/>
 
-- 🕵️‍♂️ **Текущий статус:** Изучение архитектуры систем, автоматизация рутины и написание кода.
-- 🩸 **Эстетика:** Черный фон, красный неон, сырые логи terminal, идеальный порядок в репозиториях.
-- ⚡ **Директива:** `852-5-1` — код должен работать стабильно, эффективно и незаметно.
+<!-- 6. Доступные инструменты (Стек технологий) -->
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,js,linux,docker,git,html&theme=dark" alt="Tech Stack" />
+  </a>
+</div>
 
-🔒 [ TECH_STACK // ДОСТУПНЫЕ_ИНСТРУМЕНТЫ ] ────────────────────────────────────────
+<br/>
 
-<p align="left">
-  <img src="https://shields.io" />
-  <img src="https://shields.io" />
-  <img src="https://shields.io" />
-  <img src="https://shields.io" />
-  <img src="https://shields.io" />
-  <img src="https://shields.io" />
-</p>
+<!-- 7 & 8. Монитор времени (WakaTime) и Аналитика сервера (Stats) -->
+<div align="center">
+  <table border="0">
+    <tr>
+      <td width="50%" align="center">
+        <!-- WakaTime Stats (вставьте свой ник) -->
+        <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&layout=compact&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000" alt="WakaTime Stats" />
+      </td>
+      <td width="50%" align="center">
+        <!-- GitHub Stats (вставьте свой ник) -->
+        <img src="https://github-readme-stats.vercel.app/api?username=qw00k&show_icons=true&bg_color=000000&title_color=ff0000&text_color=ffffff&icon_color=ff0000&hide_border=true" alt="GitHub Stats" />
+        <br/>
+        <!-- Top Languages -->
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qw00k&layout=compact&bg_color=000000&title_color=ff0000&text_color=ffffff&hide_border=true" alt="Top Languages" />
+      </td>
+    </tr>
+  </table>
+</div>
 
-🔒 [ INFECTED_DATA // АНАЛИТИКА_СЕРВЕРА ] ────────────────────────────────────────
+<br/>
 
-<p align="center">
-  <img src="https://vercel.app" alt="GitHub Stats" width="48%" />
-  <img src="https://vercel.app" alt="Top Langs" width="48%" />
-</p>
-
-🔒 [ ACTIVITY_MATRIX // 3D-ЛОГИ ] ───────────────────────────────────────────────
-
-<p align="center">
-  <img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D Activity City" />
-</p>
-
-<br>
-<p align="right">
-  <code>CONNECTION_CLOSED_BY_HOST... IP: 127.0.0.1 🩸</code>
-</p>
+<!-- 9. Мрачный 3D-город (Генерируется workflow) -->
+<div align="center">
+  <!-- 3D Contribution Graph -->
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
+</div>
